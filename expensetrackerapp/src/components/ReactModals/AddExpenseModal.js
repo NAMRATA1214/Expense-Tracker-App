@@ -81,8 +81,8 @@ export default function AddExpenseModal({ isOpen, handleCloseModal, totalExpense
       <div>
         <h1>Add Expenses</h1>
         <div className='grid'>
-          <input type="text" placeholder='Title' onChange={(e) => setFormData({ ...formData, title: e.target.value })} />
-          <input type="text" placeholder='Price' onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
+          <input name="title" placeholder='Title' onChange={(e) => setFormData({ ...formData, title: e.target.value })} />
+          <input name="price" placeholder='Price' onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
           <div className='select-container'>
             <select name="category" id="category" onChange={(e) => setFormData({ ...formData, category: e.target.value })}>
               <option value="Select Category" default>Select Category </option>
@@ -99,7 +99,7 @@ export default function AddExpenseModal({ isOpen, handleCloseModal, totalExpense
             </select>
           </div>
 
-          <input type="text" placeholder='dd/mm/yy' onChange={(e) => setFormData({ ...formData, date: e.target.value })} />
+          <input name="date" placeholder='dd/mm/yy' onChange={(e) => setFormData({ ...formData, date: e.target.value })} />
           <button className='AddExpense-button' onClick={handleAddExpense}>Add Expense</button>
           <div>
 
