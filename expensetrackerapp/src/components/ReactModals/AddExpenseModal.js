@@ -100,7 +100,7 @@ export default function AddExpenseModal({ isOpen, handleCloseModal, totalExpense
           </div>
 
           <input name="date" placeholder='dd/mm/yy' onChange={(e) => setFormData({ ...formData, date: e.target.value })} />
-          <button className='AddExpense-button' onClick={handleAddExpense}>Add Expense</button>
+          <button type="submit" className='AddExpense-button' onClick={handleAddExpense}>Add Expense</button>
           <div>
 
             <button className='cancel-button' onClick={handleCloseModal}>Cancel</button>
