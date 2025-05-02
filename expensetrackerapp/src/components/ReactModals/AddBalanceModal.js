@@ -29,7 +29,7 @@ export default function AddBalanceModal({ isOpen, handleCloseModal }) {
         <h1>Add Balance</h1>
         <div className='grid'>
           <input type="number" placeholder='Income Amount' onChange={(e) => setAmount(e.target.value)} />
-          <button className='AddBalance-button' onClick={handleAddBalance}>Add Balance</button>
+          <button type="submit" className='AddBalance-button' onClick={handleAddBalance}>Add Balance</button>
           <div>
             <button className='cancel-button' onClick={handleCloseModal}>Cancel</button>
           </div>
