@@ -53,11 +53,11 @@ function Tracker() {
                 <div className='Tracker-inner-2'>
                     <div className='balance'>
                         <p>Wallet Balance: <span>₹{balance - totalExpense}</span> </p>
-                        <button onClick={() => handleAddBalance()}>+ Add Income</button>
+                        <button type="button" onClick={() => handleAddBalance()}>+ Add Income</button>
                     </div>
                     <div className='expenses'>
                         <p>Expenses: <span>₹{totalExpense}</span></p>
-                        <button onClick={() => handleAddExpense()}>+ Add Expense</button>
+                        <button type="button" onClick={() => handleAddExpense()}>+ Add Expense</button>
                     </div>
                 </div>
                 <TrackerChart />
