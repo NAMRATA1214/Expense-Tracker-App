@@ -116,7 +116,7 @@ export default function EditExpenseModal({ isOpen, handleCloseModal, id }) {
           </div>
 
           <input type="text" placeholder='dd/mm/yy' value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })} />
-          <button className='AddExpense-button' onClick={handleEditExpense}>Add Expense</button>
+          <button type="submit"className='AddExpense-button' onClick={handleEditExpense}>Add Expense</button>
           <div>
 
             <button className='cancel-button' onClick={handleCloseModal}>Cancel</button>
