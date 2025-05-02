@@ -13,7 +13,7 @@ function Transaction() {
     return (
 
         <div className='Transaction'>
-            <h1>Recent Transactions</h1>
+            <h2>Recent Transactions</h2>
             <div className='Transaction-inner'>
                 <div style={{ flex: 1 }}>
                     {expenses.length === 0 &&

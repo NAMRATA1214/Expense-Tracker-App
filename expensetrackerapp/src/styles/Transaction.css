@@ -26,8 +26,9 @@
   flex-direction: column;
 }
 
-.Transaction h1 {
+.Transaction h2 {
   font-style: italic;
+  color: white;
 }
 
 .TransactionList {

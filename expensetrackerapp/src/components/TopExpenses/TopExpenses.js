@@ -4,7 +4,7 @@ import TopExpensesChart from './TopExpensesChart';
 export default function TopExpenses() {
     return (
         <div className='TopExpenses'>
-            <h1>Top Expenses</h1>
+            <h2>Top Expenses</h2>
             <div className='TopExpenses-inner'>
                 <TopExpensesChart />
             </div>
